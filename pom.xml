@@ -23,9 +23,9 @@
 
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>co.aikar</groupId>
+    <groupId>net.gmcbm.dependencies</groupId>
     <artifactId>acf-parent</artifactId>
-    <version><!--VERSION-->0.5.0-SNAPSHOT<!--VERSION--></version>
+    <version><!--VERSION-->0.5.0<!--VERSION--></version>
     <packaging>pom</packaging>
     <name>ACF (All)</name>
     <url>https://acf.emc.gs</url>
@@ -39,19 +39,19 @@
 
     <distributionManagement>
         <repository>
-            <id>aikar</id>
-            <url>https://repo.aikar.co/content/repositories/aikar-release/</url>
+            <id>gmcbm-repo</id>
+            <url>https://repo.gmcbm.net/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
-            <id>aikar</id>
-            <url>https://repo.aikar.co/content/repositories/aikar-snapshots/</url>
+            <id>gmcbm-repo</id>
+            <url>https://repo.gmcbm.net/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
     <repositories>
         <repository>
-            <id>aikar</id>
-            <url>https://repo.aikar.co/content/groups/aikar/</url>
+            <id>gmcbm-repo</id>
+            <url>https://repo.gmcbm.net/repository/maven-public/</url>
         </repository>
     </repositories>
 

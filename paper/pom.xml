@@ -28,39 +28,33 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>co.aikar</groupId>
+        <groupId>net.gmcbm.dependencies</groupId>
         <artifactId>acf-parent</artifactId>
-        <version><!--VERSION-->0.5.0-SNAPSHOT<!--VERSION--></version>
+        <version><!--VERSION-->0.5.0<!--VERSION--></version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>acf-paper</artifactId>
-    <version><!--VERSION-->0.5.0-SNAPSHOT<!--VERSION--></version>
+    <version><!--VERSION-->0.5.0<!--VERSION--></version>
 
     <name>ACF (Paper)</name>
 
     <dependencies>
         <dependency>
-            <groupId>co.aikar</groupId>
+            <groupId>net.gmcbm.dependencies</groupId>
             <artifactId>acf-bukkit</artifactId>
-            <version><!--VERSION-->0.5.0-SNAPSHOT<!--VERSION--></version>
+            <version><!--VERSION-->0.5.0<!--VERSION--></version>
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>co.aikar</groupId>
+            <groupId>net.gmcbm.dependencies</groupId>
             <artifactId>acf-brigadier</artifactId>
-            <version><!--VERSION-->0.5.0-SNAPSHOT<!--VERSION--></version>
+            <version><!--VERSION-->0.5.0<!--VERSION--></version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.destroystokyo.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.15.2-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.destroystokyo.paper</groupId>
-            <artifactId>paper-mojangapi</artifactId>
             <version>1.15.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
