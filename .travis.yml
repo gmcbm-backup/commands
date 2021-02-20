@@ -1,19 +1,22 @@
 language: java
-sudo: required
-dist: trusty
+
 jdk:
-  - oraclejdk8
   - openjdk8
   - openjdk11
-git:
-  submodules: false
-before_install:
-  - sudo apt-get update
-  # workaround for missing cacerts in openjdk
-  - sudo dpkg --purge --force-depends ca-certificates-java
-  - sudo apt-get install ca-certificates-java
-  - git config --global user.email "travis-ci@travis-ci.com"
-  - git config --global user.name "Travis CI"
+
+jobs:
+  include:
+    - stage: "Build Parent"
+      script:
+        - mvn -pl . clean install
+    - stage: "Build Core"
+      script:
+        - cd core
+        - mvn clean install
+
 cache:
   directories:
-    - '$HOME/.m2/repository'
+    - $HOME/.m2
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
