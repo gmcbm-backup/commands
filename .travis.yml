@@ -13,6 +13,34 @@ jobs:
       script:
         - cd core
         - mvn clean install
+    - stage: "Build Bukkit"
+      script:
+        - cd bukkit
+        - mvn clean install
+    - stage: "Build Bungee"
+      script:
+        - cd bungee
+        - mvn clean install
+    - stage: "Build Brigadier"
+      script:
+        - cd brigadier
+        - mvn clean install
+    - stage: "Build JDA"
+      script:
+        - cd jda
+        - mvn clean install
+    - stage: "Build Paper"
+      script:
+        - cd paper
+        - mvn clean install
+    - stage: "Build Sponge"
+      script:
+        - cd sponge
+        - mvn clean install
+    - stage: "Build Velocity"
+      script:
+        - cd velocity
+        - mvn clean install
 
 cache:
   directories:
