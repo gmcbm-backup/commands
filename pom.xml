@@ -38,22 +38,15 @@
     </properties>
 
     <distributionManagement>
-        <repository>
-            <id>gmcbm-repo</id>
-            <url>https://repo.gmcbm.net/repository/maven-releases/</url>
-        </repository>
         <snapshotRepository>
-            <id>gmcbm-repo</id>
-            <url>https://repo.gmcbm.net/repository/maven-snapshots/</url>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
-    </distributionManagement>
-
-    <repositories>
         <repository>
-            <id>gmcbm-repo</id>
-            <url>https://repo.gmcbm.net/repository/maven-public/</url>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
-    </repositories>
+    </distributionManagement>
 
     <build>
         <defaultGoal>clean install</defaultGoal>

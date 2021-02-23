@@ -38,6 +38,13 @@
 
     <name>ACF (Paper)</name>
 
+    <repositories>
+        <repository>
+            <id>papermc-repo</id>
+            <url>https://papermc.io/repo/repository/maven-public/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>net.gmcbm.dependencies</groupId>

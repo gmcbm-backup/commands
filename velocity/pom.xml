@@ -21,7 +21,6 @@
 		</repository>
 	</repositories>
 
-
 	<dependencies>
 		<dependency>
 			<groupId>net.gmcbm.dependencies</groupId>
