@@ -108,31 +108,27 @@
         <finalName>${project.artifactId}</finalName>
 
         <plugins>
+            <!-- Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
-                <configuration>
-                    <showDeprecation>false</showDeprecation>
-                    <showWarnings>false</showWarnings>
-                    <compilerArgs>
-                        <arg>-parameters</arg>
-                    </compilerArgs>
-                </configuration>
             </plugin>
+            <!-- Surefire Plugin -->
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
             </plugin>
+            <!-- Source Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>3.2.0</version>
+                <version>3.2.1</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
                         <goals>
-                            <goal>jar</goal>
+                            <goal>jar-no-fork</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -169,26 +165,16 @@
                     </dependencyReducedPomLocation>
                 </configuration>
             </plugin>
+            <!-- Javadoc Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.2.0</version>
-                <configuration>
-                    <sourcepath>src/main/java</sourcepath>
-                    <destDir>../docs/${project.artifactId}/</destDir>
-                    <quiet>true</quiet>
-                    <detectOfflineLinks>false</detectOfflineLinks>
-                    <notimestamp>true</notimestamp>
-                    <linksource>true</linksource>
-                    <nohelp>true</nohelp>
-                    <doclint>none</doclint>
-                    <source>8</source>
-                </configuration>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
                         <goals>
-                            <goal>javadoc</goal>
+                            <goal>jar</goal>
                         </goals>
                     </execution>
                 </executions>
