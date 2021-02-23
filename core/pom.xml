@@ -30,11 +30,11 @@
     <parent>
         <groupId>net.gmcbm.dependencies</groupId>
         <artifactId>acf-parent</artifactId>
-        <version>0.5.0</version>
+        <version>0.5.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>acf-core</artifactId>
-    <version>0.5.0</version>
+    <version>0.5.1-SNAPSHOT</version>
 
     <name>ACF (Core)</name>
 
