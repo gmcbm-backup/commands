@@ -243,7 +243,6 @@ public abstract class CommandManager<
      * Registers a command with ACF
      *
      * @param command The command to register
-     * @return boolean
      */
     public abstract void registerCommand(BaseCommand command);
 

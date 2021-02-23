@@ -31,12 +31,12 @@ import java.lang.annotation.Target;
 /**
  * Many implementation platforms have a concept of "Tab Completions",
  * where pressing tab will give suggestions on what you can input.
- *
+ * <p>
  * This annotation specifies either static completion values,
  * or special @codes that let you define Completion Handlers to dynamically
  * populate completion values.
- *
- * @see {@link co.aikar.commands.CommandCompletions}
+ * <p>
+ * {@link co.aikar.commands.CommandCompletions}
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD, ElementType.ANNOTATION_TYPE})
