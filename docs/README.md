@@ -1,6 +1,6 @@
 # Annotation Command Framework (ACF)
 
-![Maven Central](https://img.shields.io/maven-central/v/net.gmcbm.dependencies/commands)
+![Maven Central](https://img.shields.io/maven-central/v/net.gmcbm.dependencies/acf-parent)
 
 ## Purpose
 This is the Framework created for [Empire Minecraft](https://ref.emc.gs/Aikar?gac=commands.github).
