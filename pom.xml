@@ -113,6 +113,13 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
+                <configuration>
+                    <showDeprecation>false</showDeprecation>
+                    <showWarnings>false</showWarnings>
+                    <compilerArgs>
+                        <arg>-parameters</arg>
+                    </compilerArgs>
+                </configuration>
             </plugin>
             <!-- Surefire Plugin -->
             <plugin>
@@ -179,6 +186,17 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <sourcepath>src/main/java</sourcepath>
+                    <destDir>../docs/${project.artifactId}/</destDir>
+                    <quiet>true</quiet>
+                    <detectOfflineLinks>false</detectOfflineLinks>
+                    <notimestamp>true</notimestamp>
+                    <linksource>true</linksource>
+                    <nohelp>true</nohelp>
+                    <doclint>none</doclint>
+                    <source>8</source>
+                </configuration>
             </plugin>
             <!-- Deploy Plugin -->
             <plugin>
