@@ -17,7 +17,7 @@ pipeline {
                 }
                 dir('bukkit') {
                     echo "Building Bukkit..."
-                    sh 'mvn clean package -Djar.finalName=ACF_Bukkit-${GIT_BRANCH#*/}-#${BUILD_NUMBER}'
+                    sh 'mvn clean install -Djar.finalName=ACF_Bukkit-${GIT_BRANCH#*/}-#${BUILD_NUMBER}'
                 }
                 dir('bungee') {
                     echo "Building Bungee..."
@@ -25,7 +25,7 @@ pipeline {
                 }
                 dir('brigadier') {
                     echo "Building Brigadier..."
-                    sh 'mvn clean package -Djar.finalName=ACF_Brigadier-${GIT_BRANCH#*/}-#${BUILD_NUMBER}'
+                    sh 'mvn clean install -Djar.finalName=ACF_Brigadier-${GIT_BRANCH#*/}-#${BUILD_NUMBER}'
                 }
                 dir('jda') {
                     echo "Building JDA..."
