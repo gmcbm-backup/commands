@@ -20,10 +20,10 @@ jobs:
       script:
         - cd bungee
         - mvn clean install
-    - stage: "Build Brigadier"
-      script:
-        - cd brigadier
-        - mvn clean install
+    #    - stage: "Build Brigadier"
+    #      script:
+    #        - cd brigadier
+    #        - mvn clean install
     - stage: "Build JDA"
       script:
         - cd jda
