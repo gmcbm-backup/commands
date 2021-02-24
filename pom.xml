@@ -143,6 +143,10 @@
                         <goals>
                             <goal>shade</goal>
                         </goals>
+                        <configuration>
+                            <minimizeJar>true</minimizeJar>
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
+                        </configuration>
                     </execution>
                 </executions>
                 <configuration>
@@ -160,9 +164,6 @@
                             <shadedPattern>co.aikar.commands.lib.timings</shadedPattern>
                         </relocation>
                     </relocations>
-                    <dependencyReducedPomLocation>
-                        ${project.build.directory}/dependency-reduced-pom.xml
-                    </dependencyReducedPomLocation>
                 </configuration>
             </plugin>
             <!-- Javadoc Plugin -->
