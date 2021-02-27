@@ -19,7 +19,7 @@ jobs:
     - stage: "Build Bungee"
       script:
         - cd bungee
-        - mvn clean install
+        - mvn clean verify
     - stage: "Build Brigadier"
       script:
         - cd brigadier
@@ -27,19 +27,19 @@ jobs:
     - stage: "Build JDA"
       script:
         - cd jda
-        - mvn clean install
+        - mvn clean verify
     - stage: "Build Paper"
       script:
         - cd paper
-        - mvn clean install
+        - mvn clean verify
     - stage: "Build Sponge"
       script:
         - cd sponge
-        - mvn clean install
+        - mvn clean verify
     - stage: "Build Velocity"
       script:
         - cd velocity
-        - mvn clean install
+        - mvn clean verify
 
 cache:
   directories:
