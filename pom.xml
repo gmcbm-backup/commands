@@ -33,32 +33,32 @@
     <description>Java Command Dispatch Framework - (Bukkit, Spigot, Paper, Sponge, Bungee, JDA, Velocity supported,
         generically usable anywhere)
     </description>
-    <url>https://github.com/gmcbm-backup/commands</url>
+    <url>https://github.com/gmcbm/commands</url>
     <inceptionYear>2015</inceptionYear>
 
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>https://github.com/gmcbm-backup/commands/blob/master/LICENSE</url>
+            <url>https://github.com/gmcbm/commands/blob/master/LICENSE</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/gmcbm-backup/commands.git</connection>
-        <developerConnection>scm:git:git@github.com:gmcbm-backup/commands.git</developerConnection>
-        <url>https://github.com/gmcbm-backup/commands</url>
+        <connection>scm:git:git://github.com/gmcbm/commands.git</connection>
+        <developerConnection>scm:git:git@github.com:gmcbm/commands.git</developerConnection>
+        <url>https://github.com/gmcbm/commands</url>
         <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>https://github.com/gmcbm-backup/commands/issues</url>
+        <url>https://github.com/gmcbm/commands/issues</url>
     </issueManagement>
 
     <ciManagement>
-        <system>Travis CI</system>
-        <url>https://travis-ci.com/github/gmcbm-backup/commands</url>
+        <system>Jenkins CI</system>
+        <url>https://ci.gmcbm.net/job/gmcbm/job/commands/</url>
     </ciManagement>
 
     <developers>
