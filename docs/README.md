@@ -1,6 +1,6 @@
 # Annotation Command Framework (ACF)
 
-[![Build status (Jenkins)](https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fci.gmcbm.net%2Fjob%2Fgmcbm%2Fjob%2Fcommands%2Fjob%2Ffork%2F&label=Jenkins&logo=jenkins)](https://ci.gmcbm.net/job/gmcbm/job/commands)
+[![Build Status](https://ci.gmcbm.net/job/gmcbm/job/commands/job/fork/badge/icon)](https://ci.gmcbm.net/job/gmcbm/job/commands/job/fork/)
 [![Github last commit date](https://img.shields.io/github/last-commit/gmcbm/commands?label=Updated&logo=github)](https://github.com/gmcbm/commands/commits)
 [![Codecov](https://img.shields.io/codecov/c/gh/gmcbm/commands?label=Coverage&logo=codecov)](https://app.codecov.io/gh/gmcbm/commands)
 [![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/gmcbm/commands?label=Maintainability)](https://codeclimate.com/github/gmcbm/commands)
