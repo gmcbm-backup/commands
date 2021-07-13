@@ -18,7 +18,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building'
-                sh 'mvn -B -U -DskipTests -P jenkins clean install'
+                withMaven {
+                    sh "mvn -DskipTests clean install"
+                }
             }
             post {
                 success {
@@ -30,11 +32,8 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing'
-                sh 'mvn -B test'
-            }
-            post {
-                always {
-                    junit '**/target/surefire-reports/*.xml'
+                withMaven {
+                    sh "mvn -B test"
                 }
             }
         }
@@ -42,7 +41,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying'
-//                 sh 'mvn -B deploy'
+                withMaven {
+                    sh 'mvn -B deploy'
+                }
             }
         }
     }
