@@ -28,7 +28,7 @@
     <parent>
         <groupId>net.gmcbm.dependencies</groupId>
         <artifactId>acf-parent</artifactId>
-        <version>0.5.2-SNAPSHOT</version>
+        <version>0.5.2</version>
     </parent>
 
     <artifactId>acf-bukkit</artifactId>
