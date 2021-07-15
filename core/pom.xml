@@ -32,7 +32,7 @@
     </parent>
 
     <artifactId>acf-core</artifactId>
-    <version>0.5.2-SNAPSHOT</version>
+    <version>${parent.version}</version>
 
     <name>ACF (Core)</name>
 

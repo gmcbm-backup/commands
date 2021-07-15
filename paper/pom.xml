@@ -32,7 +32,7 @@
     </parent>
 
     <artifactId>acf-paper</artifactId>
-    <version>0.5.2-SNAPSHOT</version>
+    <version>${parent.version}</version>
 
     <name>ACF (Paper)</name>
 
@@ -47,13 +47,13 @@
         <dependency>
             <groupId>net.gmcbm.dependencies</groupId>
             <artifactId>acf-bukkit</artifactId>
-            <version>0.5.2-SNAPSHOT</version>
+            <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>net.gmcbm.dependencies</groupId>
             <artifactId>acf-brigadier</artifactId>
-            <version>0.5.2-SNAPSHOT</version>
+            <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
