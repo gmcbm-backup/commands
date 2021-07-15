@@ -30,11 +30,11 @@
     <parent>
         <groupId>net.gmcbm.dependencies</groupId>
         <artifactId>acf-parent</artifactId>
-        <version>0.5.1-SNAPSHOT</version>
+        <version>0.5.1</version>
     </parent>
 
     <artifactId>acf-brigadier</artifactId>
-    <version>0.5.1-SNAPSHOT</version>
+    <version>0.5.1</version>
 
     <name>ACF (Brigadier)</name>
 
@@ -49,7 +49,7 @@
         <dependency>
             <groupId>net.gmcbm.dependencies</groupId>
             <artifactId>acf-core</artifactId>
-            <version>0.5.1-SNAPSHOT</version>
+            <version>0.5.1</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

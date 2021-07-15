@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>acf-bungee</artifactId>
-    <version>0.5.1-SNAPSHOT</version>
+    <version>0.5.1</version>
 
     <name>ACF (Bungee)</name>
 
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>net.gmcbm.dependencies</groupId>
             <artifactId>acf-core</artifactId>
-            <version>0.5.1-SNAPSHOT</version>
+            <version>0.5.1</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
